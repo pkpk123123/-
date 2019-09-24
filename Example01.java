@@ -1,24 +1,22 @@
-// ¶¨ÒåAnimalÀà
 class Animal {
-	String name; // ¶¨ÒånameÊôĞÔ
-	// ¶¨Òå¶¯Îï½ĞµÄ·½·¨
+	String name;
 	void shout() {
-		System.out.println("¶¯Îï·¢³ö½ĞÉù");
+		System.out.println("åŠ¨ç‰©å‘å‡ºå«å£°");
 	}
 }
-// ¶¨ÒåDogÀà¼Ì³ĞAnimalÀà
+
 class Dog extends Animal {
-	// ¶¨ÒåÒ»¸ö´òÓ¡nameµÄ·½·¨
+
 	public void printName() {
 		System.out.println("name=" + name);
 	}
 }
-// ¶¨Òå²âÊÔÀà
+// å®šä¹‰æµ‹è¯•ç±»
 public class Example01 {
 	public static void main(String[] args) {
-		Dog dog = new Dog();  // ´´½¨Ò»¸öDogÀàµÄÊµÀı¶ÔÏó
-		dog.name = "É³Æ¤¹·";   // ÎªDogÀàµÄnameÊôĞÔ½øĞĞ¸³Öµ
-		dog.printName();      // µ÷ÓÃdogÀàµÄgetInfo()·½·¨
-		dog.shout();           // µ÷ÓÃdogÀà¼Ì³ĞÀ´µÄshout()·½·¨
+		Dog dog = new Dog();  
+		dog.name = "æ²™çš®ç‹—";   
+		dog.printName();     
+		dog.shout();           
 	}
 }

@@ -11,7 +11,7 @@
 		System.out.println("This is HvTv.");
 	}
 }
- class TvFactory{   //简单工厂模式
+ class TvFactory{  
 	 public static Tv produceTv(String brand){
 			 
 		 if(brand.equals("HvTv"))
@@ -23,7 +23,7 @@
 		 
 	 }
  }
- interface TvFactory{ //工厂方法模式
+ interface TvFactory{ 
 	 public Tv produceTv();
  }
  class HaierTvFactory implements Tvfactory{
